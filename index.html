@@ -193,6 +193,11 @@ strong {
   line-height: 1.5;
 }
 
+/* 구절 하나를 한 덩어리로 둔다. 좁은 화면에서는 구절 사이(예: 일본어 부제의 「、」 뒤)에서만 줄이 바뀐다 */
+.phrase {
+  display: inline-block;
+}
+
 .lead {
   font-size: 1.0625rem;
 }
@@ -465,7 +470,7 @@ mark.todo {
       <span class="app-icon" role="img" aria-label="StepStellaのアプリアイコン"></span>
       <div>
         <h2 class="app-name">StepStella</h2>
-        <p class="subtitle">歩いて地球一周、ウォーキング日記</p>
+        <p class="subtitle"><span class="phrase">歩いて地球一周、</span><span class="phrase">ウォーキング日記</span></p>
       </div>
     </div>
     <p class="lead">StepStellaは、昨日歩いた距離だけ地球上の仮想位置を進める、匿名のウォーキング日記です。1日1回、方向を選んで短いメッセージを残すと、その日の記録が3Dの地球儀に星として刻まれ、線でつながっていきます。</p>
